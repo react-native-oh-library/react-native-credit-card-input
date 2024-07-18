@@ -8,8 +8,9 @@ import ReactNative, {
   ScrollView,
   Dimensions,
   TextInput,
-  ViewPropTypes,
+  UIManager
 } from "react-native";
+import ViewPropTypes from 'deprecated-react-native-prop-types'
 
 import CreditCard from "./CardView";
 import CCInput from "./CCInput";
@@ -106,12 +107,21 @@ export default class CreditCardInput extends Component {
     const scrollResponder = this.refs.Form.getScrollResponder();
     const nodeHandle = ReactNative.findNodeHandle(this.refs[field]);
 
-    NativeModules.UIManager.measureLayoutRelativeToParent(nodeHandle,
-      e => { throw e; },
-      x => {
-        scrollResponder.scrollTo({ x: Math.max(x - PREVIOUS_FIELD_OFFSET, 0), animated: true });
-        this.refs[field].focus();
-      });
+    if(NativeModules?.UIManager?.measureLayoutRelativeToParent){
+      NativeModules.UIManager.measureLayoutRelativeToParent(nodeHandle,
+        e => { throw e; },
+        x => {
+          scrollResponder.scrollTo({ x: Math.max(x - PREVIOUS_FIELD_OFFSET, 0), animated: true });
+          this.refs[field].focus();
+        });
+    }else{
+      UIManager.measureLayoutRelativeToParent(nodeHandle,
+        e => { throw e; },
+        x => {
+          scrollResponder.scrollTo({ x: Math.max(x - PREVIOUS_FIELD_OFFSET, 0), animated: true });
+          this.refs[field].focus();
+        });
+    }
   }
 
   _inputProps = field => {
