@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-credit-card-input",
+        "License": "MIT License",
+        "License File": "https://github.com/react-native-oh-library/react-native-credit-card-input/blob/sig/LICENSE",
+        "Version Number": "0.4.1-0.0.2",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/react-native-oh-library/react-native-credit-card-input",
+        "Description": "React native credit card input component"
+    }
+]
