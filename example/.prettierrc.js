@@ -3,4 +3,11 @@
  * Use of this source code is governed by a MIT license that can be
  * found in the LICENSE file.
  */
-{}
+
+module.exports = {
+  arrowParens: 'avoid',
+  bracketSameLine: true,
+  bracketSpacing: false,
+  singleQuote: true,
+  trailingComma: 'all',
+};
