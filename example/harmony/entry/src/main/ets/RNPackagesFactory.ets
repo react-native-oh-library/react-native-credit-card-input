@@ -3,4 +3,9 @@
  * Use of this source code is governed by a MIT license that can be
  * found in the LICENSE file.
  */
-{}
+
+import { RNPackage, RNPackageContext } from '@rnoh/react-native-openharmony/ts';
+
+export function createRNPackages(ctx: RNPackageContext): RNPackage[] {
+  return [];
+}
