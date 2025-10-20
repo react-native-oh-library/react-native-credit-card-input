@@ -1,6 +1,6 @@
 {
   "name": "@react-native-ohos/react-native-credit-card-input",
-  "version": "1.0.0",
+  "version": "1.0.1-rc.1",
   "description": "React native credit card input component",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
