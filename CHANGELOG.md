@@ -2,6 +2,11 @@
 
 ## 鸿蒙化Log
 
+### v1.0.1-rc.2
+
+- pre-release version 1.0.1-rc.2
+- fix: fix the issue in the LiteCreditCardInputTest test case where the number input field is not fully displayed after setting its border color.
+
 ### v1.0.1-rc.1
 
 - pre-release version 1.0.1-rc.1
