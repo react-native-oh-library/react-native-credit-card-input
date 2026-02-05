@@ -62,13 +62,15 @@ const s = StyleSheet.create({
     justifyContent: 'center',
   },
   numberInput: {
-    width: 1000,
+    flex: 1,
+    marginRight: 10,
   },
   expiryInput: {
     width: 80,
   },
   cvcInput: {
     width: 80,
+    marginRight: 5,
   },
   last4Input: {
     width: 60,
