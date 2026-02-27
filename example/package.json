@@ -8,7 +8,7 @@
     "start": "npm run dev && hdc rport tcp:8081 tcp:8081 && react-native start",
     "reStart": "npm run reInstall:pkg && npm run dev && npm run start",
     "pack:pkg": "cd ../ && npm install && npm run build && npm pack && cd ./example",
-    "install:pkg": "npm install @react-native-ohos/react-native-credit-card-input@file:../react-native-ohos-react-native-credit-card-input-1.0.1-rc.1.tgz",
+    "install:pkg": "npm install @react-native-ohos/react-native-credit-card-input@file:../react-native-ohos-react-native-credit-card-input-1.0.1-rc.2.tgz",
     "unInstall:pkg": "npm uninstall @react-native-ohos/react-native-credit-card-input",
     "reInstall:pkg": "npm run unInstall:pkg && npm run install:pkg",
     "fast:pkg": "npm run i && npm run dev"
@@ -16,7 +16,7 @@
   "dependencies": {
     "@gorhom/portal": "^1.0.14",
     "@react-native-oh/react-native-harmony": "file:packages/react-native-oh-react-native-harmony-0.77.10.tgz",
-    "@react-native-ohos/react-native-credit-card-input": "file:../react-native-ohos-react-native-credit-card-input-1.0.1-rc.1.tgz",
+    "@react-native-ohos/react-native-credit-card-input": "file:../react-native-ohos-react-native-credit-card-input-1.0.1-rc.2.tgz",
     "react": "18.3.1",
     "react-native": "0.77.1"
   },
