@@ -2,6 +2,11 @@
 
 ## 鸿蒙化Log
 
+### v1.0.1
+
+- release version 1.0.1
+- feat: release:@react-native-ohos/react-native-credit-card-input@1.0.1
+
 ### v1.0.1-rc.2
 
 - pre-release version 1.0.1-rc.2
